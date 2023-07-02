@@ -6,7 +6,6 @@ RUN apk update
 # install ruby and bootstrap-email
 RUN apk add gcompat
 RUN apk add ruby ruby-dev ruby-bundler build-base
-RUN ruby --version
 RUN gem install nokogiri
 RUN gem install bootstrap-email -v 1.4.0
 
